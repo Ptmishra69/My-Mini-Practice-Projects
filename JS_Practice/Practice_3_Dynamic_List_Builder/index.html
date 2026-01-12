@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic List Builder</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+
+  <div class="bg-white w-full max-w-md p-6 rounded-lg shadow-md space-y-6">
+
+    <h1 class="text-2xl font-bold text-center text-gray-800">
+      Dynamic List Builder
+    </h1>
+
+    <div class="flex gap-3">
+      <input
+        id="input"
+        type="text"
+        placeholder="Enter an item"
+        class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <button
+        id="add"
+        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- List Container -->
+    <ul
+      id="list"
+      class="space-y-3"
+    >
+    </ul>
+
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
