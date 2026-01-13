@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Box Generator</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+
+  <!-- Main Card -->
+  <div class="bg-white w-full max-w-xl p-6 rounded-lg shadow-md space-y-6">
+
+    <!-- Heading -->
+    <h1 class="text-2xl font-bold text-center text-gray-800">
+      Color Box Generator 🎨
+    </h1>
+
+    <!-- Action Button -->
+    <div class="flex justify-center">
+      <button
+        id="add"
+        class="px-6 py-3 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 transition"
+      >
+        Add Box
+      </button>
+    </div>
+
+    <!-- Box Container -->
+    <div
+      id="box"
+      class="grid grid-cols-3 gap-4 justify-items-center"
+    >
+      <!-- Color boxes will be added here dynamically -->
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
