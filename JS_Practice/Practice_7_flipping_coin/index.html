@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flip the Coil</title>
+</head>
+<body>
+    <h1>
+        FLIP THE COIN
+    </h1>
+    <p>Choose your call</p>
+    <button onclick="
+            const computer_outcome = Math.random()
+            let computer_move = ''
+            if(computer_outcome>= 0 && computer_outcome<1/2) computer_move = 'tail'
+            else computer_move = 'head'
+            let status = ''
+            if(computer_move === 'head') status = 'win'
+            else status = 'lose'
+
+            alert(`you choosen head , when the toss happens it appears to be ${computer_move} and so you ${status}`)
+    ">HEAD</button>
+    <button onclick="
+            computer_outcome = Math.random()
+            let computer_move = ''
+            if(computer_outcome>= 0 && computer_outcome<1/2) computer_move = 'tail'
+            else computer_move = 'head'
+            let status = ''
+            if(computer_move === 'head') status = 'lose'
+            else status = 'win'
+
+            alert(`you choosen tail , when the toss happens it appears to be ${computer_move} and so you ${status}`)
+    ">TAIL</button>
+</body>
+</html>
