@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div>
+        <button onclick="
+                let computer_move=''
+                const randomNumber = Math.random();
+                if(randomNumber>=0 && randomNumber<1/3){
+                    computer_move = 'rock'
+                }
+                else if(randomNumber>=1/3 && randomNumber<2/3){
+                    computer_move = 'scissor'
+                }
+                else{
+                    computer_move = 'paper'
+                }
+                let result = ''
+                if(computer_move === 'rock') {result='tie'}
+                else if(computer_move === 'paper') result = 'lose'
+                else result = 'win'
+
+                alert(`you choosen rock , computer choosen ` + computer_move + ` and you ` + result)
+            ">
+            rock</button>
+        <button onclick="
+                let computer_move=''
+                const randomNumber = Math.random();
+                if(randomNumber>=0 && randomNumber<1/3){
+                    computer_move = 'rock'
+                }
+                else if(randomNumber>=1/3 && randomNumber<2/3){
+                    computer_move = 'scissor'
+                }
+                else{
+                    computer_move = 'paper'
+                }
+                let result = ''
+                if(computer_move === 'rock') {result='win'}
+                else if(computer_move === 'paper') result = 'tie'
+                else result = 'lose'
+
+                alert(`you choosen paper , computer choosen ` + computer_move + ` and you ` + result)
+            ">paper</button>
+        <button onclick="
+                let computer_move=''
+                const randomNumber = Math.random();
+                if(randomNumber>=0 && randomNumber<1/3){
+                    computer_move = 'rock'
+                }
+                else if(randomNumber>=1/3 && randomNumber<2/3){
+                    computer_move = 'scissor'
+                }
+                else{
+                    computer_move = 'paper'
+                }
+                let result = ''
+                if(computer_move === 'rock') {result='lose'}
+                else if(computer_move === 'paper') result = 'win'
+                else result = 'tie'
+
+                alert(`you choosen scissor , computer choosen ` + computer_move + ` and you ` + result)
+            ">scissors</button>
+        <button>reset score</button>
+    </div>
+</body>
+</html>
